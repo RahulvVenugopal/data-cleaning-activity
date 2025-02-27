@@ -42,6 +42,7 @@ Sample DataFrame:
 ![Screenshot (23)](https://github.com/user-attachments/assets/cdb7efd9-a109-4f59-b9eb-0529a88497c8)
 
 2. For the above dataframe, Write a program to select the data who's attempt is greater than 3.
+   Code: df[df['attempts']>3]
 
 ![Screenshot (24)](https://github.com/user-attachments/assets/ac68aa19-d84e-4856-a33e-e92742140d7b)
 
@@ -49,17 +50,25 @@ Sample DataFrame:
 
 a. Select rows where age is greater than 30:
 
+Code: df[df['age']>30]
+
 ![image](https://github.com/user-attachments/assets/479119ea-e01f-47d9-9c0b-b9527bf46523)
 
 b. Select rows where name contains 'e':
+
+Code: df[df['name'].str.contains('e')]
 
 ![image](https://github.com/user-attachments/assets/2dbbe3ae-36ab-4144-a4d8-73ad934b2689)
 
 c. Select rows where gender is 'M' and salary is greater than 65000:
 
+Code: df[(df['gender']=='M') & (df['salary']>65000)]
+
 ![image](https://github.com/user-attachments/assets/90a24c46-dcbb-4290-93e4-37c125312b2e)
 
 d. Select columns 'name' and 'age' 
+
+Code: df[['name','age']]
 
 ![image](https://github.com/user-attachments/assets/bd24036a-1c07-4d3b-9009-70975f3a284b)
 
@@ -73,30 +82,44 @@ Importing dataset
 
 a.  select the rows where clients with primary education have subscribed to a deposit?
 
+Code: df.loc[(df['education']=='primary') & (df['deposit']=='yes')]
+
 ![image](https://github.com/user-attachments/assets/22333e19-7e93-4fe2-bc3a-665182923c26)
 
 b.  select the rows where clients who have not subscribed to a deposit?
+
+Code: df.loc[df['deposit']=='no']
 
 ![image](https://github.com/user-attachments/assets/fb4ce3e5-f480-4186-a007-48ce6254b8fb)
 
 c. select the rows where clients who have subscribed to a deposit either have a housing or a personal loan?
 
+Code: df.loc[(df['loan']=='yes') & (df['deposit']=='yes')]
+
 ![image](https://github.com/user-attachments/assets/a2d5cb81-e5ce-4824-bdb0-15cd5e027c59)
 
 d. select the rows where clients with secondary education who have not subscribed to a deposit?
+
+Code: df.loc[(df['education']=='secondary') & (df['deposit']=='no')]
 
 ![image](https://github.com/user-attachments/assets/fe9ee2d0-e6be-4261-b0a7-e44ca613d891)
 
 e. select the rows where  clients who have subscribed to a term deposit as an outcome of the successful marketing campaign?
 
+Code:df.loc[(df['poutcome']=='success') & (df['deposit']=='yes')]
+
 ![image](https://github.com/user-attachments/assets/7b7a3d60-c675-4fd6-9bd6-8b054ab9a03a)
 
 f. select the rows where unemployed clients who have not subscribed to deposit?
+
+Code: df.loc[(df['job']=='unemployed') & (df['deposit']=='no')]
 
 ![image](https://github.com/user-attachments/assets/c8e11d6a-8d9a-4e68-a9ea-e94538e7e457)
 
 
 g.select coloumns ‘education’ and ‘balance’ where age is less than or equal to 30.
+
+Code: df.loc[df['age']>30,['education','balance']]
 
 ![image](https://github.com/user-attachments/assets/41eddfa8-c81e-4f66-906f-ee7b5364b615)
 
