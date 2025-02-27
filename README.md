@@ -20,7 +20,7 @@ STEP 6: Use zscore of to remove outliers
 
 ## Coding & Output
 
-# ACTIVITY 1:
+## ACTIVITY 1:
 
 1. Write a Python program to select the 'name' and 'score' columns from the following DataFrame.
 
@@ -59,7 +59,7 @@ d. Select columns 'name' and 'age'
 
 ![image](https://github.com/user-attachments/assets/bd24036a-1c07-4d3b-9009-70975f3a284b)
 
-# ACTIVITY 2:
+## ACTIVITY 2:
 
 1. Write python code for indexing rows and columns using iloc or loc method based on the following conditions:
 
