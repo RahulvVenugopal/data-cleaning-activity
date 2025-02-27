@@ -93,7 +93,7 @@ e. select the rows where  clients who have subscribed to a term deposit as an
 
 f. select the rows where unemployed clients who have not subscribed to deposit?
 
-![image](https://github.com/user-attachments/assets/7c5e49d8-4dff-479a-b99e-4e7980611ef8)
+![image](https://github.com/user-attachments/assets/c8e11d6a-8d9a-4e68-a9ea-e94538e7e457)
 
 
 g.select coloumns ‘education’ and ‘balance’ where age is less than or equal to 30.
